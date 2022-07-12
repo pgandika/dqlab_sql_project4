@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project Data Analysis for Retail: Sales Performance Report</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong>Project Data Analysis for Retail: Sales Performance Report</strong>
+				</div>
+				<div class="inner">
+					<a href="https://pgandika.github.io/Andika_Gumilang_Portfolio/"class="button small">Home</a>
+					<a href="https://pgandika.github.io/Andika_Gumilang_Portfolio/"class="button small">Projects</a>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h1><Strong>Project Data Analysis for Retail: Sales Performance Report</Strong></h1>
+						</header>
+						<br>
+						<div class="row gtr-50 gtr-uniform">
+								<div class="col-5"><span class="image fit"><img src="images/sql_assignment_cover.png"></span></div>
+							</div><br>
+						<h2><strong>Project Summary</strong></h2>
+						<p>Improving the Understanding of SQL function to help access, read, manipulate, and analyze the data stored in the database and generate useful insights to drive an informed decision-making process, and this 3 main things that I did in this project :</p>
+						<ol>
+							<li>Created SQL query based using aggregate functions, date format, joins, CTE, and window function.</li>
+							<li>Creating EDA, Analyze Store Promotion Effectiveness,Efficiency and creating Customer Analytics</li>
+							<li>Created the insights for the project </li>
+					  	</ol>
+						<br>
+
+						<h2><strong>Project Background & Dataset</strong></h2>
+						<h3>Project Background</h3>
+							<p>This project purpose is to Analyze the performance of the DQLab Store, Explore and get the hands on Structured Query Language (SQL). As a data analyst, we are expected to use SQL to formating and cleaning the data, joining the data, using CTE and Window function also generating useful insights from the data. </p>
+					</section>
+						<h3>Dataset 1 | The table name used in this project is "dqlab_sales_store".</h3>
+							<p>The dataset used contains transactions from 2009 to 2012 with a total of raw data is 5500, including order status which is divided into order finished, order returned and order cancelled, The dataset that will be used in this project contains the following data:</p>
+						<ol>	
+							<li> OrderID</li>
+							<li> Order Status</li>
+							<li> Customer</li>
+							<li> Order Date</li>
+							<li> Order Quantity</li>
+							<li> Sales</li>
+							<li> Discount %</li>
+							<li> Discount</li>
+							<li> Product Category</li>
+							<li> Product Sub-Category</li>
+						</ol>
+						<p><h2>Project Files</h2></p>
+						For a more comprehensive analysis and visualization, please open the project files.
+						<ul>
+							<li><a href="https://console.cloud.google.com/bigquery?sq=846791540182:ae10efc2fca04689adb5d2f63af7861a">Query Code - Google BigQuery</a></li>
+							<li><a href="https://github.com/pgandika/RevoU-SQL-Project">Github Repository</a></li>
+						</ul>
+					</section>
+
+				<!-- Four -->
+				<section id="four">
+					<h3><strong>Dataset 1</strong></h3>
+
+						<p><b>1.Overall Performance by Year</b></p>
+						<script src="https://pastebin.com/embed_js/RmtAbzQn?theme=dark"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-5"><span class="image fit"><img src="images/a1.JPG"></span></div>
+						</div>
+						<p><br>Total sales each year tends to increase, but in 2012 total sales were not greater than total sales in 2009 and number of orders finished each year tended to increase but not significantly.</p>
+
+						<p><b>2.Overall Performance by Product Subcategory</b></p>
+						<script src="https://pastebin.com/embed_js/swKQDCka?theme=dark"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4"><span class="image fit"><img src="images/a2.JPG"></span></div>
+						</div>
+						<p><br>There is an increase and decrease in total sales for each product subcategory in one year. The highest total sales in 2011 and 2012 were still dominated by product subcategories that tended to be the same, it is chairs and chairmats, office machines, and tables, while the lowest total sales are labels, scissors, rulers and trimmers, and rubber bands.</p>
+
+						<p><b>3.DQLab Store Promotion Effectiveness and Efficiency | By Year </b></p>
+						<p>In this section we will analyze the effectiveness and efficiency of the promotions that have been carried out so far. The effectiveness and efficiency of the promotions will be analyzed based on the burn rate by comparing the total value of the promotions to the total sales earned. DQLab hopes that the burn rate remains at the maximum 4.5%  (Formula untuk burn rate : (total discount / total sales) * 100) </p>
+						<script src="https://pastebin.com/embed_js/AUVnrkX6?theme=dark"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4"><span class="image fit"><img src="images/a3.JPG"></span></div>
+						</div>
+						<p><br>Promotion Effectiveness and Efficiency by Years. every year the percentage of burn rate tends to increase, which means that promotion costs continue to increase every year. The impact of increased promotion costs is to increase in total sales, but the promotion that has increased sales cannot be said to be effective and efficient because the percentage of burn rate exceeds the maximum expected rate at 4.5%.</p>
+
+						<p><b>4. DQLab Store Promotion Effectiveness and Efficiency | by Product Subcategory</b></p>
+						<script src="https://pastebin.com/embed_js/mRgyMnaA?theme=dark"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8"><span class="image fit"><img src="images/a4.JPG"></span></div>
+						</div>
+						<p>in 2012 there were only a few product subcategories with a burn rate percentage lower than 4.5%. Meanwhile, several product subcategories with a burn rate greater than 4.5% had low sales rates.</p>
+
+						<p><b>5. Customer Analyst | Customers Per Year</b></p>
+						<script src="https://pastebin.com/embed_js/yC5czazc?theme=dark"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4"><span class="image fit"><img src="images/a5.JPG"></span></div>
+						</div><br>
+						<p>Every year the number of customers who make transactions tends to increase but not significantly.</p>
+
+						<p><b>Conclusion</b></p>
+						<p>DQLab store during 2009 to 2012 had performance that increased every year but not too significantly. Overall, promotion activities are quite good but still not effective and efficient based on product subcategories. In addition, there are more existing customers who make transactions than new customers, so store performance tends to be stagnant.</p>
+				</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/andika-gumilang-6aa09b113/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/pgandika" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:andikapg19@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Andika Putra G</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
